@@ -1,153 +1,106 @@
-\# 🌦️ Weather ETL Data Engineering Pipeline
+# 🌦️ Weather ETL Data Engineering Pipeline
 
-## 🧑‍💻 Project Purpose
-This project demonstrates an end-to-end **ETL (Extract, Transform, Load)** data pipeline using **Apache Airflow**.  
-It automates fetching weather data from an API, transforming it with Python, and loading it into a **PostgreSQL** database — all running in Docker containers.
+## 🧠 Overview
+This project demonstrates an **end-to-end ETL (Extract, Transform, Load)** data pipeline built using **Apache Airflow**, **PostgreSQL**, and **Docker**.  
+It automates fetching weather data from an API, transforming it using Python, and loading it into a PostgreSQL database.
 
 ---
 
-## 🧰 Tools & Technologies
+## 🧑‍💻 Project Purpose
+The goal of this project is to showcase key **Data Engineering concepts**:
+- Workflow orchestration using **Apache Airflow**
+- API data ingestion
+- Data transformation using Python
+- Automated data loading into a relational database
+- Running everything inside Docker for easy deployment
+
+---
+
+## ⚙️ Tools & Technologies
 | Tool | Purpose |
 |------|----------|
 | **Apache Airflow** | Workflow orchestration |
-| **Docker Compose** | Containerization & environment setup |
-| **PostgreSQL** | Data storage |
+| **Docker Compose** | Containerization & local setup |
+| **PostgreSQL** | Database for loading data |
 | **Python 3.12** | Data extraction and transformation |
-| **Requests / Pandas** | API integration and data cleaning |
+| **Requests / Pandas** | API integration & data cleaning |
 
 ---
 
 ## 📊 ETL Pipeline Flow
 ```text
-Weather API → Airflow (Extract → Transform → Load) → PostgreSQL
+Weather API → Airflow DAG (Extract → Transform → Load) → PostgreSQL Database
+🚀 How to Run Locally
+Clone the repository
 
-
-
-\## 📘 Overview
-
-This project demonstrates a complete \*\*ETL (Extract, Transform, Load)\*\* data pipeline built using \*\*Apache Airflow\*\*, \*\*PostgreSQL\*\*, and \*\*Docker\*\*.  
-
-The pipeline automatically extracts weather data from an API, transforms it using Python, and loads it into a PostgreSQL database.
-
-
-
-\## 🧠 Key Features
-
-\- \*\*Orchestrated with Apache Airflow\*\*
-
-\- \*\*Automated ETL\*\* workflow: Extract → Transform → Load
-
-\- \*\*Data extraction\*\* from public weather API
-
-\- \*\*Data transformation\*\* using Python
-
-\- \*\*Data loading\*\* into PostgreSQL
-
-\- Fully \*\*containerized\*\* using Docker
-
-\- \*\*Scalable \& schedulable\*\* — can run daily, hourly, etc.
-
-
-
-\## ⚙️ Tech Stack
-
-\- \*\*Apache Airflow\*\* – Workflow orchestration
-
-\- \*\*PostgreSQL\*\* – Database storage
-
-\- \*\*Python 3.12\*\* – Data transformation
-
-\- \*\*Docker \& Docker Compose\*\* – Containerization
-
-\- \*\*Pandas (optional)\*\* – For data cleaning (if used)
-
-
-
-\## 🏗️ Project Structure
-
-
-├── dags/ # Airflow DAGs (weather\_etl\_dag.py)
-
-├── data/ # Example extracted/processed data
-
-├── plugins/ # Custom Airflow plugins (optional)
-
-├── docker-compose.yaml # Container orchestration file
-
-├── .gitignore
-
-└── README.md
-
-
-
-
-\## 🚀 How to Run
-
-```bash
-
-\# Clone the repository
-
-git clone https://github.com/<your-username>/weather-etl-pipeline.git
-
+bash
+Copy code
+git clone https://github.com/vaibhavmule-code/weather-etl-pipeline.git
 cd weather-etl-pipeline
+Start the containers
 
-
-
-\# Start the containers
-
+bash
+Copy code
 docker compose up -d
+Access Airflow UI
 
-
-
-\# Access Airflow UI
-
-http://localhost:8080
+URL: http://localhost:8080
 
 Username: admin
 
 Password: admin
 
+Trigger the DAG
+
+In the Airflow UI, enable and trigger weather_etl_dag
+
+It will automatically:
+
+Extract weather data from API
+
+Transform data with Python
+
+Load into PostgreSQL
+
+🗂️ Project Structure
+bash
+Copy code
+├── dags/
+│   └── weather_etl_dag.py        # Main Airflow DAG
+├── data/                         # Optional data samples
+├── plugins/                      # (Optional) custom Airflow plugins
+├── docker-compose.yaml           # Docker orchestration file
+├── requirements.txt              # Python dependencies
+├── .gitignore
+└── README.md
+🖼️ Screenshots
+Airflow DAG
+
+<img width="1867" height="917" alt="Airflow UI Dashboard" src="https://github.com/user-attachments/assets/df4ac21d-02dc-4a32-b926-e883bea89e44" />
 
 
-🎯 Skills Demonstrated
+📚 Future Improvements
+Add automated data quality checks
+
+Connect with cloud storage (AWS S3 / GCS)
+
+Add data visualization dashboard (Tableau / Power BI)
+
+Integrate with CI/CD pipeline
+
+📜 License
+This project is licensed under the MIT License.
+
+---
+
+---
+
+## ✨ Author
+**Vaibhav Mule**  
+📍 Data Engineering Enthusiast  
+🔗 [GitHub](https://github.com/vaibhavmule-code)  
+💼 [LinkedIn](https://www.linkedin.com/in/vaibhav-d-mule/)  
+📧 [Email](mailto:vaibhavmule125@gmail.com)
 
 
-
--Data Pipeline Development
-
-
-
--Workflow Scheduling (Airflow)
-
-
-
--ETL Automation
-
-
-
--Docker \& Containerization
-
-
-
--PostgreSQL Integration
-
-
-
--Real-world Data Engineering Deployment
-
-
-
-📂 Future Enhancements
-
-
-
--Add data quality checks (Great Expectations)
-
-
-
--Integrate with cloud storage (AWS S3 / GCP)
-
-
-
--Add visualization using Power BI / Tableau
-
+---
