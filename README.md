@@ -77,13 +77,13 @@ Copy code
 ## 🖥️ Airflow UI Screenshots
 
 ### DAG Overview
-![Airflow DAGs UI](images/airflow_dags_ui.png)
+![Airflow DAGs UI](<img width="1867" height="917" alt="airflow_ui png" src="https://github.com/user-attachments/assets/fa468ea3-3e0a-44d5-817a-f8f8f42f1ea7" />)
 
-### Successful DAG Runs
-![Airflow DAG Runs](images/airflow_dag_runs.png)
+### DAG Run History
+![Airflow DAG Runs](<img width="1894" height="923" alt="dag png" src="https://github.com/user-attachments/assets/05ed5ca5-4729-4e8a-9014-36b18b7cf3d2" />g)
 
-These screenshots show the `weather_etl_dag` successfully scheduled and executed in Apache Airflow.
-
+### DAG Workflow (Extract → Transform → Load)
+![Airflow DAG Flow](<img width="1882" height="914" alt="imagesairflow_dag_flow png" src="https://github.com/user-attachments/assets/45d83d2a-3ccf-4d77-a4e3-f1d48175d6f4" />)
 
 
 📚 Future Improvements
