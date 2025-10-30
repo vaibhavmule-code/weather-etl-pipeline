@@ -73,10 +73,17 @@ Copy code
 ├── requirements.txt              # Python dependencies
 ├── .gitignore
 └── README.md
-🖼️ Screenshots
-Airflow DAG
 
-<img width="1867" height="917" alt="Airflow UI Dashboard" src="https://github.com/user-attachments/assets/df4ac21d-02dc-4a32-b926-e883bea89e44" />
+## 🖥️ Airflow UI Screenshots
+
+### DAG Overview
+![Airflow DAGs UI](images/airflow_dags_ui.png)
+
+### Successful DAG Runs
+![Airflow DAG Runs](images/airflow_dag_runs.png)
+
+These screenshots show the `weather_etl_dag` successfully scheduled and executed in Apache Airflow.
+
 
 
 📚 Future Improvements
