@@ -1,5 +1,26 @@
 \# 🌦️ Weather ETL Data Engineering Pipeline
 
+## 🧑‍💻 Project Purpose
+This project demonstrates an end-to-end **ETL (Extract, Transform, Load)** data pipeline using **Apache Airflow**.  
+It automates fetching weather data from an API, transforming it with Python, and loading it into a **PostgreSQL** database — all running in Docker containers.
+
+---
+
+## 🧰 Tools & Technologies
+| Tool | Purpose |
+|------|----------|
+| **Apache Airflow** | Workflow orchestration |
+| **Docker Compose** | Containerization & environment setup |
+| **PostgreSQL** | Data storage |
+| **Python 3.12** | Data extraction and transformation |
+| **Requests / Pandas** | API integration and data cleaning |
+
+---
+
+## 📊 ETL Pipeline Flow
+```text
+Weather API → Airflow (Extract → Transform → Load) → PostgreSQL
+
 
 
 \## 📘 Overview
