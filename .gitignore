@@ -1,0 +1,12 @@
+# Ignore Airflow and temporary files
+logs/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+.vscode/
+*.log
+airflow.db
+airflow.cfg
